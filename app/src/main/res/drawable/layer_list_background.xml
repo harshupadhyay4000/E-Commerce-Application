@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color for the rest of the layout -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Curved background on the upper side -->
+    <item android:drawable="@drawable/curve_background_vector" />
+
+</layer-list>

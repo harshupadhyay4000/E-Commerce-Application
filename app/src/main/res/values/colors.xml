@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="my_light_primary">#FF000000</color>
+
+
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent_white">#99FFFFFF</color>
+
+    <color name="green">#52C156</color>
+    <color name="lightgreen">#98FF9C</color>
+    <color name="darkgreen">#2A9A2E</color>
+
+
+
+    <color name="red">#BD2116</color>
+
+    <color name="blue">#DAE4E8</color>
+    <color name="newblue">#DAE4E8</color>
+
+    <color name="bluenew">#BAC3C6</color>
+
+    <color name="bluebtn">#7EC6E8</color>
+
+    <color name="Darkblue">#2A398F</color>
+
+    <color name="yellow">#75FFC107</color>
+
+    <color name="orange">#FF9F11</color>
+    <color name="darkorange">#B36C04</color>
+
+    <color name="lightorange">#FBB853</color>
+
+
+    <color name="transparent">#03FF9F11</color>
+    <color name="grey">#F6F7FA</color>
+
+
+
+
+
+</resources>

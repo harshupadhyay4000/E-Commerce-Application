@@ -1,0 +1,11 @@
+<!-- res/drawable/curve_background_vector.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/_400sdp"
+    android:height="@dimen/_550sdp"
+    android:viewportWidth="400"
+    android:viewportHeight="550">
+
+    <path
+        android:fillColor="#2A398F"
+        android:pathData="M0,0 L400,0 C300,180 100,180 0,0 Z"/>
+</vector>

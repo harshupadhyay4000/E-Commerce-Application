@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:padding="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_20sdp">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Number:"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/oswald_bold"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/cart_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/oswald_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart Date:"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/oswald_bold"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/oswald_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:textAlignment="center"
+            />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_110sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Status:"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/oswald_bold"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/order_status_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/oswald_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:textAlignment="center"
+            />
+
+    </GridLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/viewmorebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:backgroundTint="@color/Darkblue"
+        />
+
+
+</androidx.cardview.widget.CardView>

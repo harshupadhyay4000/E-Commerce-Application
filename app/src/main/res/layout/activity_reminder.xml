@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Vendor.Reminder"
+    android:orientation="vertical"
+    android:background="@drawable/spl_back">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2A398F"
+            app:title="Reminder"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <EditText
+        android:id="@+id/text_data"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:hint="Enter Text Here:"
+        android:background="@drawable/edit_text_background"
+
+        android:singleLine="true"
+        android:paddingBottom="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/oswald_bold"
+        android:textSize="@dimen/_15ssp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calender_card"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        >
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/calendar"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/oswald_bold"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_15ssp"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/time_card"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_50sdp">
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/baseline_access_time_filled_24"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/oswald_bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"/>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/final_btn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Set Reminder"
+        android:fontFamily="@font/miami_font"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginLeft="@dimen/_60sdp"/>
+</LinearLayout>

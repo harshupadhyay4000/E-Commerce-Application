@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_v_products"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2A398F"
+            app:title="Products"
+            app:titleTextColor="@android:color/white" />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <Spinner
+        android:id="@+id/spinner_products_cat"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/spinner_border"/>
+    <Spinner
+        android:id="@+id/spinner_products_subcat"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_105sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/spinner_border"
+        />
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview_products"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/searchview_border"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_v_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_220sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addproductbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_550sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/baseline_add_24"
+        app:backgroundTint="@color/bluebtn"
+        app:elevation="6dp" />
+    <ImageView
+        android:id="@+id/product_bg_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_img"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+</RelativeLayout>

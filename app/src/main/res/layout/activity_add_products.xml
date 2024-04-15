@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/spl_back">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_420sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="@dimen/_40sdp">
+        <Spinner
+            android:id="@+id/spinnerone_add_products"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:background="@drawable/spinner_border"/>
+        <Spinner
+            android:id="@+id/spinnertwo_add_products"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:background="@drawable/spinner_border"/>
+        <ImageView
+            android:id="@+id/captured_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:layout_marginLeft="@dimen/_130sdp"/>
+        <ImageButton
+            android:id="@+id/camera_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/camera_icon"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:layout_marginLeft="@dimen/_130sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_190sdp"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="Upload Image"/>
+
+
+
+        <EditText
+            android:id="@+id/addproduct_edt_txt"
+            android:layout_width="@dimen/_255sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:hint="Enter Product"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/addproductprice_edt_txt"
+            android:layout_width="@dimen/_255sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:hint="Enter Product Price"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:singleLine="true"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/product_addbutton_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_380sdp"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="Add"
+            android:backgroundTint="@color/Darkblue"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_150sdp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
