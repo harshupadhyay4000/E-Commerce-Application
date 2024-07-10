@@ -12,8 +12,18 @@ public class PreferenceManager {
     String Subcategory_id;
 
     public static final String KEY_CUSTOMER_ID = "customer_id";
+    public static final String KEY_CUST_ID = "cust_id";
+
     public static final String PREF_NAME = "com.example.e_commerceapp.PREF";
     public static final String IS_LOGGED_IN_KEY = "is_logged_in";
+
+    public String getCustId(){
+        return sharedPreferences.getString(VariableBag.USER_ID,null);
+    }
+    public void setCustId(String key,String value){
+        editor.putString(VariableBag.USER_ID, value);
+        editor.apply();
+    }
 
 
     public String getCustomerId() {

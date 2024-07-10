@@ -3,7 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/v_curve_background_vector">
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/v_curve_background_vector">
+
+
 
     <TextView
         android:id="@+id/title_text"
@@ -97,5 +103,7 @@
         android:background="@drawable/baseline_access_time_filled_24"
         android:layout_marginTop="@dimen/_300sdp"
         android:layout_marginLeft="@dimen/_20sdp"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -2,7 +2,7 @@ package com.example.e_commerceapp.Utils;
 
 public class VariableBag {
 
-    public static String BASE_URL = "http://192.168.1.9/customer_api/mobileApi/";
+    public static String BASE_URL = "http://192.168.1.110/customer_api/mobileApi/";
     public static String API_KEY = "";
 
     public static String SUCCESS_CODE = "200";

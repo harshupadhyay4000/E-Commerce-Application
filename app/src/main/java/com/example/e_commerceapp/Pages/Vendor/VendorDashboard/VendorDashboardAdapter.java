@@ -148,7 +148,7 @@ public class VendorDashboardAdapter extends RecyclerView.Adapter<VendorDashboard
 
 
         restCall= RestClient.createService(RestCall.class, VariableBag.BASE_URL,VariableBag.API_KEY);
-        restCall.getConfirmation("add_confirmation",ordernumber,status,preferenceManager.getVendorId(),preferenceManager.getCustomerId())
+        restCall.getConfirmation("add_confirmation",ordernumber,status,preferenceManager.getVendorId(),preferenceManager.getCustId())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Confirmation_Response>() {

@@ -112,6 +112,7 @@ public class Login extends AppCompatActivity {
                         if (loginResponse.getStatus().equalsIgnoreCase(VariableBag.SUCCESS_CODE)) {
                             // Save customer ID to preferences
                             preferenceManager.setCustomerId(VariableBag.User_id, loginResponse.getCustomerId());
+                            preferenceManager.setCustId(VariableBag.USER_ID,loginResponse.getCustomerId());
                             Toast.makeText(Login.this, "Login success", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(Login.this, HomePage.class);
                             startActivity(i);
