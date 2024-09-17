@@ -89,26 +89,25 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_20sdp"/>
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_20sdp"
-        >
+        android:layout_gravity="center">
+
+
         <ImageButton
             android:id="@+id/googlebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/google"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
             />
         <ImageButton
             android:id="@+id/apple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/apple"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
             />
 
 
@@ -117,19 +116,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/facebook"
+            android:layout_margin="@dimen/_10sdp"
 
             />
-    </LinearLayout>
 
+    </GridLayout>
 
 
 
     <ImageButton
         android:id="@+id/log_u_signup"
-        android:layout_width="@dimen/_200sdp"
+        android:layout_width="@dimen/_170sdp"
         android:layout_height="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+       android:layout_gravity="center"
         android:background="@drawable/dont_have"
         />
     <TextView
@@ -142,10 +142,10 @@
         />
 
     <ImageView
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
         android:background="@drawable/loginimg"
-        android:layout_marginLeft="@dimen/_60sdp"/>
+        android:layout_gravity="center"/>
 
     </LinearLayout>
 
