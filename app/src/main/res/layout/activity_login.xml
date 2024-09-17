@@ -6,8 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Login.Login"
     android:orientation="vertical"
-    android:background="@drawable/curve_background_vector"
-    android:padding="@dimen/_16sdp">
+   android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_background_vector"
+        android:orientation="vertical">
+
 
 
 
@@ -27,9 +34,11 @@
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_16sdp"
+
+        android:layout_margin="@dimen/_15sdp"
         android:background="@drawable/edit_text_background"
         android:padding="@dimen/_8sdp"
+        android:textColorHint="@color/black"
         android:hint="Username"
         android:singleLine="true"
         android:textColor="@color/black"/>
@@ -45,7 +54,8 @@
         app:boxCornerRadiusBottomStart="@dimen/_8sdp"
         app:boxCornerRadiusTopEnd="@dimen/_8sdp"
         app:boxCornerRadiusTopStart="@dimen/_8sdp"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/black">
 
         <EditText
             android:id="@+id/pass"
@@ -54,6 +64,8 @@
             android:background="@drawable/edit_text_background"
             android:padding="@dimen/_8sdp"
             android:hint="Password"
+            android:textColorHint="@color/black"
+            android:layout_margin="@dimen/_15sdp"
             android:fontFamily="sans-serif"
             android:inputType="textPassword"
             android:singleLine="true"
@@ -65,7 +77,7 @@
         android:id="@+id/loginbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_gravity="center"
         android:background="@drawable/login_button"
         android:layout_marginTop="@dimen/_30sdp"
         android:textColor="@color/white"/>
@@ -135,5 +147,6 @@
         android:background="@drawable/loginimg"
         android:layout_marginLeft="@dimen/_60sdp"/>
 
+    </LinearLayout>
 
 </LinearLayout>

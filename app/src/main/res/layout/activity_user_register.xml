@@ -28,6 +28,7 @@
         android:background="@drawable/edit_text_background"
         android:padding="@dimen/_8sdp"
         android:hint="Enter Full Name"
+        android:textColorHint="@color/black"
         android:singleLine="true"
         android:fontFamily="sans-serif"
         android:textColor="@color/black"/>
@@ -41,6 +42,7 @@
         android:padding="@dimen/_8sdp"
         android:singleLine="true"
         android:hint="Mobile"
+        android:textColorHint="@color/black"
         android:fontFamily="sans-serif"
         android:textColor="@color/black"/>
 
@@ -53,6 +55,7 @@
         android:padding="@dimen/_8sdp"
         android:hint="Enter Email ID"
         android:singleLine="true"
+        android:textColorHint="@color/black"
         android:fontFamily="sans-serif"
         android:textColor="@color/black"/>
 
@@ -66,6 +69,7 @@
         android:singleLine="true"
         android:hint="Enter Password"
         android:fontFamily="sans-serif"
+        android:textColorHint="@color/black"
         android:textColor="@color/black"/>
     <EditText
         android:id="@+id/confpass"
@@ -76,20 +80,23 @@
         android:padding="@dimen/_8sdp"
         android:singleLine="true"
         android:hint="Confirm Password"
+        android:textColorHint="@color/black"
         android:fontFamily="sans-serif"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <GridLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center"
+       >
+
         <Button
             android:id="@+id/signupbtn"
             android:layout_width="@dimen/_105sdp"
             android:layout_height="@dimen/_35sdp"
             android:text="User"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:textSize="@dimen/_15ssp"
+            android:textSize="@dimen/_12ssp"
             android:textStyle="bold"
+            android:layout_margin="@dimen/_20sdp"
             android:textColor="@color/white"
             android:backgroundTint="#2A398F"/>
         <Button
@@ -97,14 +104,13 @@
             android:layout_width="@dimen/_105sdp"
             android:layout_height="@dimen/_35sdp"
             android:text="Vendor"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:layout_marginLeft="@dimen/_75sdp"
-            android:textSize="@dimen/_15ssp"
+            android:layout_margin="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:backgroundTint="#2A398F"/>
-    </LinearLayout>
 
+    </GridLayout>
 
 
 
